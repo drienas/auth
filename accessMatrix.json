@@ -1,0 +1,22 @@
+[
+  {
+    "ep": "users",
+    "method": "get",
+    "requiredGroups": ["admin.users.read"]
+  },
+  {
+    "ep": "users",
+    "method": "post",
+    "requiredGroups": ["admin.users.create"]
+  },
+  {
+    "ep": "groupsbyn",
+    "method": "get",
+    "requiredGroups": ["admin.users.read"]
+  },
+  {
+    "ep": "groups",
+    "method": "get",
+    "requiredGroups": ["admin.users.read"]
+  }
+]
