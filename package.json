@@ -1,6 +1,6 @@
 {
   "name": "remote-auth",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "SchneiderGruppe Cloud Authentication Service",
   "main": "index.js",
   "scripts": {
