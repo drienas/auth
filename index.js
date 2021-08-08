@@ -51,7 +51,7 @@ app.post('/login', (req, res) => {
       if (valid) {
         let token = null;
         let username = data.username;
-        token = createToken(username);
+        token = createToken(data);
         res.status(200).json({
           success: true,
           token,

@@ -7,10 +7,12 @@ if (!process.env.SECRET) {
 
 const secret = process.env.SECRET;
 
-const createToken = (username, exp = 24 * 60 * 60) =>
+const createToken = (data, exp = 24 * 60 * 60) =>
   jwt.sign(
     {
-      username,
+      username: data.username,
+      id: data._id ? data._id : null,
+      fullName: data.fullName ? data.fullName : null,
     },
     secret
   );
